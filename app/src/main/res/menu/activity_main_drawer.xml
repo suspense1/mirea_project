@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_data"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/data" />
+        <item
+            android:id="@+id/nav_webView"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/webview" />
+        <item
+            android:id="@+id/nav_service"
+            android:icon="@drawable/baseline_work_24"
+            android:title="Service" />
+        <item
+            android:id="@+id/nav_compass"
+            android:title="Compass" />
+        <item
+            android:id="@+id/nav_camera"
+            android:title="Camera" />
+        <item
+            android:id="@+id/nav_micro"
+            android:title="micro Record" />
+
+
+    </group>
+</menu>

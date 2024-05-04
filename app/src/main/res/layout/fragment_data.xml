@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral_variant20"
+    tools:context=".ui.data.DataFragment">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="Мобильная разработка"
+        android:textColor="@color/material_dynamic_neutral60"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="25sp"
+        android:layout_marginEnd="25sp"
+        android:text="      В мобильных приложениях все чаще используются технологии искусственного интеллекта, такие как распознавание образов, голосовые ассистенты, рекомендательные системы и многое другое.\n      Мобильные приложения все чаще используют AR и VR технологии для создания увлекательных и интерактивных пользовательских интерфейсов.\n      С увеличением числа мобильных приложений, вопросы безопасности и защиты данных становятся все более актуальными. Разработчики должны уделять особое внимание обеспечению конфиденциальности пользовательских данных и защите от кибератак."
+        android:textColor="@color/material_dynamic_neutral60"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/ic_menu_gallery"
+        app:circularflow_defaultRadius="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Профиль"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25sp"/>
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="75sp"
+        android:layout_width="200dp"
+        android:onClick="openCamera"
+        android:clickable="true"
+        android:src="@drawable/baseline_work_24"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Илья Ишутин"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="300sp"/>
+
+</FrameLayout>
