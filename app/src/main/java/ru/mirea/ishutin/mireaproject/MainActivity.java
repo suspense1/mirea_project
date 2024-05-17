@@ -13,6 +13,7 @@ import android.webkit.WebView;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
@@ -33,12 +34,17 @@ public class MainActivity extends AppCompatActivity {
 
     private int PermissionCode = 200;
 
+    FirebaseAuth firebaseAuth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        firebaseAuth = FirebaseAuth.getInstance();
+
+        Log.d("USER", firebaseAuth.getCurrentUser().toString());
 
         if	(ContextCompat.checkSelfPermission(this,	POST_NOTIFICATIONS)	==	PackageManager.PERMISSION_GRANTED)	{
             Log.d(MainActivity.class.getSimpleName().toString(),	"Разрешения получены");
@@ -60,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_data, R.id.nav_webView, R.id.nav_service, R.id.nav_compass, R.id.nav_camera, R.id.nav_micro, R.id.nav_profile, R.id.nav_file_proc)
+                R.id.nav_data, R.id.nav_webView, R.id.nav_service, R.id.nav_compass, R.id.nav_camera, R.id.nav_micro, R.id.nav_profile, R.id.nav_file_proc, R.id.nav_cat_info)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);

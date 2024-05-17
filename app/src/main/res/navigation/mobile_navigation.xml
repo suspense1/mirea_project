@@ -46,5 +46,10 @@
         android:name="ru.mirea.ishutin.mireaproject.FileProcessingFragment"
         android:label="fragment_file_processing"
         tools:layout="@layout/fragment_file_processing" />
+    <fragment
+        android:id="@+id/nav_cat_info"
+        android:name="ru.mirea.ishutin.mireaproject.CatInfoFragment"
+        android:label="fragment_cat_info"
+        tools:layout="@layout/fragment_cat_info" />
 
 </navigation>

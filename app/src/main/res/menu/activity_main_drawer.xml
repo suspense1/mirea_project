@@ -31,6 +31,9 @@
         <item
             android:id="@+id/nav_file_proc"
             android:title="Работа с файлами" />
+        <item
+            android:id="@+id/nav_cat_info"
+            android:title="Факты о кошках (HTTP)" />
 
 
     </group>
