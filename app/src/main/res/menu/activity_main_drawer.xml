@@ -25,6 +25,12 @@
         <item
             android:id="@+id/nav_micro"
             android:title="micro Record" />
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_file_proc"
+            android:title="Работа с файлами" />
 
 
     </group>
