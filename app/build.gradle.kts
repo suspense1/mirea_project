@@ -52,4 +52,7 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation("androidx.work:work-runtime:2.9.0")
     implementation ("com.github.bumptech.glide:glide:4.16.0")
+    implementation ("com.google.android.gms:play-services-location:21.1.0")
+    implementation ("org.osmdroid:osmdroid-android:6.1.16")
+    implementation ("androidx.preference:preference:1.2.0")
 }

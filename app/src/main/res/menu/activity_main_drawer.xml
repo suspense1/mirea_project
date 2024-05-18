@@ -34,6 +34,9 @@
         <item
             android:id="@+id/nav_cat_info"
             android:title="Факты о кошках (HTTP)" />
+        <item
+            android:id="@+id/nav_institution"
+            android:title="Заведения" />
 
 
     </group>

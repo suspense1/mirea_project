@@ -51,5 +51,10 @@
         android:name="ru.mirea.ishutin.mireaproject.CatInfoFragment"
         android:label="fragment_cat_info"
         tools:layout="@layout/fragment_cat_info" />
+    <fragment
+        android:id="@+id/nav_institution"
+        android:name="ru.mirea.ishutin.mireaproject.InstitutionFragment"
+        android:label="fragment_institution"
+        tools:layout="@layout/fragment_institution" />
 
 </navigation>
